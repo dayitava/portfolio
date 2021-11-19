@@ -13,6 +13,7 @@
     "next": "^12.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-spring": "^9.3.0",
     "three": "^0.131.1"
   },
   "devDependencies": {
