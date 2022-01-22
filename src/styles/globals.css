@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Mulish", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #121212;
@@ -21,4 +21,23 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.neumorphism-shadow {
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.25),
+    -20px -20px 40px rgba(255, 252, 252, 0.04);
+  box-shadow: inset 20px 20px 40px #8339cd, inset -20px -20px 40px #ab49ff;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+
+@layer components {
+  .primary-button {
+    @apply px-12 py-4 bg-primary text-white font-bold rounded-full border-8 border-gray-900 neumorphism-shadow shadow-inner transition-colors hover:bg-purple-800 duration-300;
+  }
 }
